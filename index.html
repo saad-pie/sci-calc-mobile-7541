@@ -1,1 +1,73 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Scientific Calculator</title><link rel="stylesheet" href="./style.css"></head><body><div class="calculator"><div class="display" id="display">0</div><div class="buttons"><button class="btn function" data-value="rad">RAD</button><button class="btn function" data-value="deg">DEG</button><button class="btn function" data-value="(">(</button><button class="btn function" data-value=")">)</button><button class="btn clear" data-value="ac">AC</button><button class="btn function" data-value="sin">sin</button><button class="btn function" data-value="cos">cos</button><button class="btn function" data-value="tan">tan</button><button class="btn function" data-value="^">x<sup>y</sup></button><button class="btn delete" data-value="del">DEL</button><button class="btn function" data-value="log">log</button><button class="btn function" data-value="ln">ln</button><button class="btn function" data-value="sqrt">√</button><button class="btn function" data-value="fact">x!</button><button class="btn operator" data-value="/">/</button><button class="btn number" data-value="7">7</button><button class="btn number" data-value="8">8</button><button class="btn number" data-value="9">9</button><button class="btn operator" data-value="*">*</button><button class="btn operator" data-value="-">-</button><button class="btn number" data-value="4">4</button><button class="btn number" data-value="5">5</button><button class="btn number" data-value="6">6</button><button class="btn operator" data-value="+">+</button><button class="btn operator" data-value="neg">+/-</button><button class="btn number" data-value="1">1</button><button class="btn number" data-value="2">2</button><button class="btn number" data-value="3">3</button><button class="btn function" data-value="pi">π</button><button class="btn equals" data-value="=">=</button><button class="btn memory" data-value="mc">MC</button><button class="btn memory" data-value="mr">MR</button><button class="btn memory" data-value="m_plus">M+</button><button class="btn memory" data-value="m_minus">M-</button><button class="btn number" data-value="0">0</button><button class="btn number" data-value=".">.</button><button class="btn function" data-value="e">e</button><button class="btn function" data-value="ten_pow">10<sup>x</sup></button><button class="btn function" data-value="exp">e<sup>x</sup></button></div></div><script src="./script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="calculator">
+    <!-- Display -->
+    <div class="display" id="display">0</div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <!-- Modes -->
+      <button class="btn function" data-value="rad">RAD</button>
+      <button class="btn function" data-value="deg">DEG</button>
+      <button class="btn function" data-value="(">(</button>
+      <button class="btn function" data-value=")">)</button>
+      <button class="btn clear" data-value="ac">AC</button>
+
+      <!-- Trig -->
+      <button class="btn function" data-value="sin">sin</button>
+      <button class="btn function" data-value="cos">cos</button>
+      <button class="btn function" data-value="tan">tan</button>
+      <button class="btn function" data-value="^">x<sup>y</sup></button>
+      <button class="btn delete" data-value="del">DEL</button>
+
+      <!-- Logs -->
+      <button class="btn function" data-value="log">log</button>
+      <button class="btn function" data-value="ln">ln</button>
+      <button class="btn function" data-value="sqrt">√</button>
+      <button class="btn function" data-value="fact">x!</button>
+      <button class="btn operator" data-value="/">÷</button>
+
+      <!-- Numbers + Operators -->
+      <button class="btn number" data-value="7">7</button>
+      <button class="btn number" data-value="8">8</button>
+      <button class="btn number" data-value="9">9</button>
+      <button class="btn operator" data-value="*">×</button>
+      <button class="btn operator" data-value="-">−</button>
+
+      <button class="btn number" data-value="4">4</button>
+      <button class="btn number" data-value="5">5</button>
+      <button class="btn number" data-value="6">6</button>
+      <button class="btn operator" data-value="+">+</button>
+      <button class="btn operator" data-value="neg">±</button>
+
+      <button class="btn number" data-value="1">1</button>
+      <button class="btn number" data-value="2">2</button>
+      <button class="btn number" data-value="3">3</button>
+      <button class="btn function" data-value="pi">π</button>
+      <button class="btn equals" data-value="=">=</button>
+
+      <!-- Memory -->
+      <button class="btn memory" data-value="mc">MC</button>
+      <button class="btn memory" data-value="mr">MR</button>
+      <button class="btn memory" data-value="m_plus">M+</button>
+      <button class="btn memory" data-value="m_minus">M−</button>
+      <button class="btn number" data-value="0">0</button>
+
+      <!-- Constants & Powers -->
+      <button class="btn number" data-value=".">.</button>
+      <button class="btn function" data-value="e">e</button>
+      <button class="btn function" data-value="ten_pow">10<sup>x</sup></button>
+      <button class="btn function" data-value="exp">e<sup>x</sup></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
